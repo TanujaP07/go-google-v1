@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .headiv{
+    @apply flex space-x-4 items-center
+  }
+  .link{
+    @apply hover:underline cursor-pointer
+  }
+}
