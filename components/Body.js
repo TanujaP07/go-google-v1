@@ -1,4 +1,3 @@
-import User from "./User";
 import Image from 'next/image'
 import {MagnifyingGlassIcon, MicrophoneIcon} from "@heroicons/react/24/solid";
 export default function Body(){
