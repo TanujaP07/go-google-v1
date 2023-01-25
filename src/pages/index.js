@@ -1,5 +1,8 @@
 import Header from 'components/Header'
 import Head from 'next/head'
+import Image from 'next/image'
+import {MagnifyingGlassIcon, MicrophoneIcon} from "@heroicons/react/24/solid";
+import Body from 'components/Body';
 
 export default function Home() {
   return (
@@ -12,6 +15,7 @@ export default function Home() {
       {/*Header*/}
       <Header/>
       {/*Body*/}
+      <Body/>
       {/*Footer*/}
     </div>
   )

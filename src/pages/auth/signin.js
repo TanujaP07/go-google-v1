@@ -23,6 +23,7 @@ export default function signin({providers}){
         </>    
     );
 }
+
 {/*server side rendering function - exclusive to next-js*/}
 export async function getServerSideProps(){
     const providers = await getProviders();
