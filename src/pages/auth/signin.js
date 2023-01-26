@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "components/Header";
-import {getProviders, signIn} from "next-auth/react"
+import {getProviders, signIn} from "next-auth/react";
 
 export default function signin({providers}){
     return(
@@ -8,7 +8,7 @@ export default function signin({providers}){
         <Header/>
         <div className = "mt-40">
             {/* we need to get the providers here*/}
-            {Object.values(providers).map(provider =>(
+            {Object.values(providers).map(provider => (
                 <div key = {provider.name} className = "flex flex-col items-center">
                     <img 
                     className = "w-52 object-cover"
@@ -28,6 +28,6 @@ export default function signin({providers}){
 export async function getServerSideProps(){
     const providers = await getProviders();
     return{
-        props: {providers},
+        props: { providers },
     };
 }

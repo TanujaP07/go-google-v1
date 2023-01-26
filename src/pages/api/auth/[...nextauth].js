@@ -16,6 +16,7 @@ export const authOptions = ({
         clientSecret: process.env.GOOGLE_CLIENT_SECRET, //needs to be a secret from the public users- to prevent them from misusing
     }),
     ],
+    secret:process.env.SECRET,
     pages:{
         signIn : "/auth/signin",
     },
